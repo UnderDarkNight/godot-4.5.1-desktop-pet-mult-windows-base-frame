@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxkf42tcy088s"]
+
+[ext_resource type="Script" uid="uid://cr32j2bgywaus" path="res://main/EmptyWindowSenceScript.gd" id="1_0715n"]
+
+[node name="EmptyWindowSence" type="Window"]
+transparent_bg = true
+oversampling_override = 1.0
+position = Vector2i(0, 36)
+exclusive = true
+unresizable = true
+always_on_top = true
+transparent = true
+extend_to_title = true
+minimize_disabled = true
+maximize_disabled = true
+script = ExtResource("1_0715n")

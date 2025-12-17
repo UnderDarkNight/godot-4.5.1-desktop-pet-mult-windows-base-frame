@@ -1,0 +1,12 @@
+[configuration]
+entry_symbol = "hide_taskbar_library_init"
+compatibility_minimum = 4.5
+
+[libraries]
+windows.debug.x86_64 = "res://sys/hide_taskbar_windows_debug.dll"
+windows.release.x86_64 = "res://sys/hide_taskbar_windows_release.dll"
+
+[dependencies]
+windows.64 = ["user32.dll"]
+
+

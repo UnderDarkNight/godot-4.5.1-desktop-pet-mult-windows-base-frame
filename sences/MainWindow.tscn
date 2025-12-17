@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://df8l35i3kf0ux"]
+
+[ext_resource type="Script" uid="uid://b5ihrinj2htub" path="res://main/MainWindowScript.gd" id="1_nd7to"]
+[ext_resource type="Texture2D" uid="uid://c0q1cxpkbt2xl" path="res://icon.svg" id="3_f2f4d"]
+
+[node name="MainWindow" type="Window"]
+oversampling_override = 1.0
+position = Vector2i(0, 36)
+script = ExtResource("1_nd7to")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(52, 49)
+texture = ExtResource("3_f2f4d")

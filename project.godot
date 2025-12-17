@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Digimon"
+run/main_scene="uid://df8l35i3kf0ux"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/icon="res://icon.svg"
+boot_splash/minimum_display_time=2000
+
+[autoload]
+
+Global="*res://main/Global.gd"
+TUNING="*res://main/Tuning.gd"
+TaskbarHelper="*res://main/TaskbarHelper.gd"
+
+[display]
+
+window/size/viewport_width=0
+window/size/viewport_height=0
+window/size/mode=1
+window/size/initial_position_type=0
+window/size/resizable=false
+window/size/borderless=true
+window/size/transparent=true
+window/size/no_focus=true
+window/size/minimize_disabled=true
+window/size/maximize_disabled=true
+window/subwindows/embed_subwindows=false
+window/per_pixel_transparency/allowed=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/child_window_ready/plugin.cfg", "res://addons/childwindowready/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+viewport/transparent_background=true
